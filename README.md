@@ -13,21 +13,20 @@ Enfin, une classe "Panier" qui hérite d'une ArrayList de Ramassable permet de r
 ### Clonage dépot git et placement dans le dossier :
 
 ```sh
-clone https://github.com/Rockinfox91/tme-heritage-interface.git
+git clone https://github.com/Rockinfox91/tme-heritage-interface.git
 cd tme-heritage-interface/exoForet/
+```
+
+### Compilation du projet :
+
+```sh
+javac -cp src -d bin src/exoForet/TestForet.java
 ```
 
 ### Execution du projet :
 
 ```sh
 java -cp bin exoForet.TestForet
-```
-
-# Modifications :
-
-Une fois dans le dossier du projet, après avoir fait les modifs voulus, compiler avec :
-```sh
-javac -cp src -d bin src/exoForet/TestForet.java
 ```
 
 ## Amélioration possibles :
