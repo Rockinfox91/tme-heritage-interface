@@ -67,12 +67,26 @@ public class Foret {
 				
 				if(obj == null) {continue;}
 				if(obj instanceof Ramassable) {
-					clist.add((Champignon) obj);
+					clist.add(obj);
 				}
 			}
 		}
 		
 		return clist;
 		
+	}
+	
+	public void ramasser(Panier p){		
+		for(int i=0 ; i<terrain.length ; i++) {
+			for (int j=0 ; j<terrain.length ; j++) {
+				Object obj = terrain[i][j];
+				
+				if(obj == null) {continue;}
+				if(obj instanceof Ramassable) {
+					p.add((Ramassable)obj);
+					System.out.println(p);
+				}
+			}
+		}
 	}
 }

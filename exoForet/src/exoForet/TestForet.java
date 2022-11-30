@@ -7,18 +7,27 @@ public class TestForet {
 		
 		for(int i = 0 ; i<10 ; i++) {
 			Object obj;
-			if(Math.random()<0.7) {
+			double x = Math.random();
+			if(x<0.3) {
 				obj = new Champignon("Cèpe");
 			}
-			else {
+			else if(x<0.7){
 				obj = new Arbre("Pins");
+			}
+			else if(x<0.9){
+				obj = new Baie("Framboise");
+			}
+			else {
+				obj = new ChampignonToxique("Amanite");
 			}
 			
 			while(!f.placer(obj)) {}
 		}
 		
 		System.out.println(f.toString());
-		System.out.println(f.ramasserChampignon());
+		
+		Panier p = new Panier(8);
+		f.ramasser(p);
 
 	}
 
