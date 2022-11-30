@@ -10,9 +10,9 @@ Enfin, une classe "Panier" qui hérite d'une ArrayList de Ramassable permet de r
 
 # Installation : 
 
-'''sh
+```sh
 clone https://github.com/Rockinfox91/tme-heritage-interface.git
-'''
+```
 
 # Utilisation :
 Utiliser Eclipse IDE
