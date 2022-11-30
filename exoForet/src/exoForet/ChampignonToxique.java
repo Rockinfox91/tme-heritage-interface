@@ -1,6 +1,6 @@
 package exoForet;
 
-public class ChampignonToxique extends Champignon implements Ramassable, Toxique {
+public class ChampignonToxique extends Champignon implements Toxique {
 
 	public ChampignonToxique(String nom) {
 		super(nom);
